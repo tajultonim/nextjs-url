@@ -1,0 +1,18 @@
+{
+  "name": "nextjs-url",
+  "version": "1.0.3",
+  "description": "Get absolute url, api url and all for your Next.JS project.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tajultonim/nextjs-url.git"
+  },
+  "author": "tajultonim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tajultonim/nextjs-url/issues"
+  },
+  "keywords": ["next", "js", "next.js", "localhost", "production", "absolute", "url", "api", "server", "client", "link", "website"],
+  "homepage": "https://github.com/tajultonim/nextjs-url#readme"
+}
