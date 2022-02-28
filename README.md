@@ -11,13 +11,13 @@ This module enables you to easily get the protocol, host and all URL params of y
 With [npm](https://npmjs.org/) installed, run
 
 ```sh
-npm install next-url --save
+npm install nextjs-url --save
 ```
 
 or with [yarn](https://yarnpkg.com/) installed, run
 
 ```sh
-yarn add next-url
+yarn add nextjs-url
 ```
 
 This package will let you get the current url of your running Next.js website. You can get the url server side or clientside. For server side calling, you have to provide a request object as a prop. You can get this object from getServerSideFunction. So it is important to note that you can not run this module in a static page as your domain is assigned after you page is built. You may consider calling it client side in this senario or use environment variable for preknown domains.
@@ -52,7 +52,7 @@ URL {
 You must provide a request for server side calling which can be acured by calling `getServerSideProps`.
 
 ```js
-import { getBaseUrl, getApiRoot } from "next-url";
+import { getBaseUrl, getApiRoot } from "nextjs-url";
 
 export async function getServerSideProps({ req }) {
   const baseUrl = getBaseUrl(req).href; // http://localhost:<PORT>/
@@ -74,7 +74,7 @@ export async function getServerSideProps({ req }) {
 You may sometimes need to call another API from a API. In that case you can call the module with the API request prop.
 
 ```js
-import { getBaseUrl, getApiRoot } from "next-url";
+import { getBaseUrl, getApiRoot } from "nextjs-url";
 
 export default function Test(req, res) {
   const baseUrl = getBaseUrl(req).href; // http://localhost:<PORT>/
@@ -91,7 +91,7 @@ export default function Test(req, res) {
 For client side calling you don't need the request object just call the function without any prop. `Remeber that you can't call it without request prop in server side.`
 
 ```js
-import { getBaseUrl, getApiRoot } from "next-url";
+import { getBaseUrl, getApiRoot } from "nextjs-url";
 import { useEffect } from "react";
 
 export default function MyApp() {
