@@ -105,7 +105,7 @@ export default function MyApp() {
 }
 ```
 
-If you deployed your Next.js app with `now` the `baseUrl` will be something like `https://<your-app>.now.sh/api/`.
+If you deployed your Next.js app with `now` the `baseUrl` will be something like `https://<your-app>.vercel.app/api/`.
 
 However, if you are running the app locally the `baseUrl` will be `http://localhost:<PORT>/` instead.
 
